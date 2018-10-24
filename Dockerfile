@@ -1,6 +1,5 @@
 FROM frolvlad/alpine-python3
 
-
 WORKDIR /app
 COPY . /app
 
