@@ -6,4 +6,5 @@ COPY . /app
 EXPOSE 5000
 
 RUN pip install -r requirements.txt
-CMD FLASK_APP=api.py flask run --host="::"
+#CMD FLASK_APP=api.py flask run --host="::"
+CMD FLASK_APP=hello.py flask run --host="::" --with-threads
