@@ -1,4 +1,4 @@
-FROM python:3.6:alpine
+FROM frolvlad/alpine-python3
 
 
 WORKDIR /app
