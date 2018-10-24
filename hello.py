@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from alice_scripts import Skill, request, say, suggest
 skill = Skill(__name__)
 
