@@ -1,11 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+#https://zeit.co/dashboard
 from alice_scripts import Skill, request, say, suggest
 skill = Skill(__name__)
 
 @skill.script
 def run_script():
-    yield say('Добрый день! Как вас зовут?')
+    yield say('Добрый день! Чем могу помочь?')
     name = request.command
 
     yield say('Сколько вам лет?')
@@ -23,4 +24,4 @@ def run_script():
     yield say(f'Рада познакомиться, {name}! Когда вам '
               f'исполнится {age + 1}, я могу подарить '
               f'{"котёнка" if loves_cats else "щенка"}!',
-              end_session=True)
+              end_session=True) 
